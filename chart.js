@@ -43,9 +43,6 @@ var comma = d3.format(",.0f");
 
 function transition(name) {
 	if (name === "all-donations") {
-		<audio id="sound1" src="yoursound.mp3" preload="auto"></audio>
-  <button onclick="document.getElementById('sound1').play();">Play
-  it</button>
 		$("#initial-content").fadeIn(250);
 		$("#value-scale").fadeIn(1000);
 		$("#view-donor-type").fadeOut(250);
@@ -55,9 +52,6 @@ function transition(name) {
 		//location.reload();
 	}
 	if (name === "group-by-party") {
-		<audio id="sound1" src="yoursound.mp3" preload="auto"></audio>
-  <button onclick="document.getElementById('sound1').play();">Play
-  it</button>
 		$("#initial-content").fadeOut(250);
 		$("#value-scale").fadeOut(250);
 		$("#view-donor-type").fadeOut(250);
@@ -65,9 +59,7 @@ function transition(name) {
 		$("#view-party-type").fadeIn(1000);
 		return partyGroup();
 	}
-	if (name === "group-by-donor-type") {<audio id="sound1" src="yoursound.mp3" preload="auto"></audio>
-  <button onclick="document.getElementById('sound1').play();">Play
-  it</button>
+	if (name === "group-by-donor-type") {
 		$("#initial-content").fadeOut(250);
 		$("#value-scale").fadeOut(250);
 		$("#view-party-type").fadeOut(250);
