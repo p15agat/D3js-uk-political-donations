@@ -2,7 +2,22 @@
 <html>
 
 <head>
-
+<script>
+ 
+    $(document).ready(function() {
+        var obj = document.createElement("audio");
+        obj.src="https://kahimyang.com/resources/sound/click.mp3";
+        obj.volume=0.10;
+        obj.autoPlay=false;
+        obj.preLoad=true;       
+ 
+        $(".playSound").click(function() {
+            obj.play();
+        });
+ 
+    });
+ 
+</script>
     <meta charset="utf-8">
     <title>Who's funding the big three?</title>
     <meta property="og:image" content="http://isthisjam.com.s3.amazonaws.com/img/bubble-img.png" />
@@ -40,13 +55,14 @@
     </header>
     <nav role="navigation">
         <ul>
-            <li><a href="#" role="button" class="pure-button switch" id="all-donations">All money</a>
+            <li><a href="#" role="button" class="pure-button class="playSound">Play switch" id="all-donations">All money</a>
+          
             </li>
-            <li><a href="#" role="button" class="pure-button switch" id="group-by-money-source">The public's purse</a>
+            <li><a href="#" role="button" class="pure-button class="playSound">Pla switch" id="group-by-money-source">The public's purse</a>
             </li>
-            <li><a href="#" role="button" class="pure-button switch" id="group-by-party">Split by party</a>
+            <li><a href="#" role="button" class="pure-button class="playSound">Pla switch" id="group-by-party">Split by party</a>
             </li>
-            <li><a href="#" role="button" class="pure-button switch" id="group-by-donor-type">Split by type of donor</a>
+            <li><a href="#" role="button" class="pure-button class="playSound">Pla switch" id="group-by-donor-type">Split by type of donor</a>
             </li>
         </ul>
     </nav>
